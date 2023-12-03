@@ -1,3 +1,49 @@
-# hw05_final
+# Блог-платформа #
 
-[![CI](https://github.com/yandex-praktikum/hw05_final/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/yandex-praktikum/hw05_final/actions/workflows/python-app.yml)
+Блог-платформа - это социальная сеть для публикации личных дневников, созданная для обмена записями между пользователями. <br>
+Мой проект представляет собой платформу создания постов, общения и обмена мнениями. Поддерживает создание личных дневников, публикацию постов, комментирование их, подписку на других авторов, управление своими записями и профилем. <br>
+Реализован с помощью фреймворка Django. Реализована авторизация и регистрация пользователей, восстановление пароля, есть возможность подписки на других авторов, комментирования. Проект покрыт тестами.
+
+
+## Стек технологий ##
++ Python 3.10.10
++ Django 3.2
++ HTML
++ unittest
++ Pillow
+
+## Установка
+Клонировать репозиторий и перейти в него в командной строке:
+```
+git clone git@github.com:Mary8jk/Django-blog-platform.git
+```
+
+```
+cd Django-blog-platform
+```
+
+Cоздать и активировать виртуальное окружение:
+
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+Установить зависимости из файла requirements.txt:
+
+```
+python3 -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+Выполнить миграции:
+
+```
+python3 manage.py migrate
+```
+
+Запустить проект:
+
+```
+python3 manage.py runserver
+```
